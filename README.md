@@ -19,5 +19,5 @@ Here we can see the way my javascript proposal should look as a completed projec
 ## Development Timeline
 
   ### Day One: 
-    - [ ] find proper APIs for generating Hands, displaying cards
-    - [ ] find proper API for calculating winner 
+  - [ ] find proper APIs for generating Hands, displaying cards
+  - [ ] find proper API for calculating winner 
