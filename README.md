@@ -10,4 +10,14 @@ Here we can see the way my javascript proposal should look as a completed projec
   - Users can place any hand against any other possible hand thier opponent could make
   - Users can quickly calculate their available remaining outs to see their change of winning
   
-## 
+## MVPS
+  - [ ] logic behind any hand vs any other calculation 
+  - [ ] interface in which a user can decide thier hand and their opponents
+  - [ ] cards, when selected, are removed from the possible selection of cards
+  - [ ] percentage updates as soon as a calculation is available
+  
+## Development Timeline
+
+  ### Day One: 
+    - [ ] find proper APIs for generating Hands, displaying cards
+    - [ ] find proper API for calculating winner 
