@@ -1,10 +1,14 @@
-# Texas-Hold-em-odds-calculator
+# Texas Hold 'em Odds Calculator
 
-WireFrame: 
+## Background and Overview
+
+Prior to studying software development, I made a living playing Texas Hold 'em poker. Both online and live, the odds of winning are something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, they often need to check the odds on a computer 
+
+## WireFrame: 
 
 ![wireframe](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/wireframe.png)
 
-Here we can see the way my javascript proposal should look as a completed project. Each square will be a clickable box that gives an option to place any remaining card from the deck. It will claculate the odds of one hand against one opponent preflop, on the flop, on the turn and the river. 
+Here we can see the way my proposal should look as a completed project. Each square will be a clickable box that gives an option to place any remaining card from the deck. It will claculate the odds of one hand against one opponent preflop, on the flop, on the turn and the river. 
 
 ## Functionality: 
   - Users can place any hand against any other possible hand thier opponent could make
@@ -20,4 +24,6 @@ Here we can see the way my javascript proposal should look as a completed projec
 
   ### Day One: 
   - [ ] find proper APIs for generating Hands, displaying cards
-  - [ ] find proper API for calculating winner 
+  - [ ] find proper API for calculating winner
+  
+  
