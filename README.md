@@ -27,16 +27,17 @@ Here we can see the way my proposal should look as a completed project. Each rec
   - [x] set up files and folders
   - [x] find proper APIs for generating Hands, displaying cards
   - [x] find proper API for calculating winner
-  - [ ] Research D3 data visualization
+  - [x] Research D3 data visualization
   - [x] fetch and receive json from APIs in console
   
   ### Day Two: 
-  - [ ] reseatch how to place anything on the screen using DOM manipulation
+  - [x] reseatch how to place anything on the screen using DOM manipulation
   - [ ] Get my files to interact properlly 
-  - [ ] 
+  - [ ] render cards on the screen
+  - [ ] have cards fill on click
   
   ### Day Three:
-  - [ ] 
+  - [ ]  
   - [ ] 
   - [ ] 
   - [ ] 
