@@ -2,7 +2,7 @@
 
 ## Background and Overview
 
-Prior to studying software development, I made a living playing Texas Hold 'em. Both online and live, the odds of winning are something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, it is common to check the odds on a computer after the hand is over. What I intend to show here is simple and stramlined interface for users to quickly access in between hands.
+Prior to studying software development, I made a living playing Texas Hold 'em. Both online and live, the odds of winning are something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, after the hand is over it is common for players to discuss or list out the possible cards that could fall as they articulate the mental math they went through in the hand. What I intend to show here is simple and stramlined interface for users to quickly access in between hands.
 
 ## WireFrame: 
 
