@@ -16,7 +16,7 @@ Here we can see the way my proposal should look as a completed project. Each rec
   - It opperates as soon as a calculation is possible
   
 ## MVPS
-  - [ ] logic behind any hand vs any other hand calculation 
+  - [x] logic behind any hand vs any other hand calculation 
   - [ ] interface in which a user can decide thier hand and their opponents
   - [ ] cards, when selected, are removed from the possible selection of cards
   - [ ] percentage updates as soon as a calculation is available
@@ -32,4 +32,11 @@ Here we can see the way my proposal should look as a completed project. Each rec
   
   ### Day Two: 
   - [ ] reseatch how to place anything on the screen using DOM manipulation
+  - [ ] Get my files to interact properlly 
+  - [ ] 
+  
+  ### Day Three:
+  - [ ] 
+  - [ ] 
+  - [ ] 
   - [ ] 
