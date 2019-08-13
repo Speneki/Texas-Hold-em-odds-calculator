@@ -24,10 +24,12 @@ Here we can see the way my proposal should look as a completed project. Each rec
 ## Development Timeline
 
   ### Day One: 
-  - [ ] set up files and folders
-  - [ ] find proper APIs for generating Hands, displaying cards
-  - [ ] find proper API for calculating winner
+  - [x] set up files and folders
+  - [x] find proper APIs for generating Hands, displaying cards
+  - [x] find proper API for calculating winner
+  - [ ] Research D3 data visualization
+  - [x] fetch and receive json from APIs in console
   
   ### Day Two: 
-  - [ ] On click, offer the option to fill any space with any card of their choosing
-  - [ ] Remove the card when clicked from the deck of clickable cards
+  - [ ] reseatch how to place anything on the screen using DOM manipulation
+  - [ ] 
