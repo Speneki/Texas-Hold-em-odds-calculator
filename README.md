@@ -23,7 +23,9 @@ Here we can see the way my proposal should look as a completed project. Each squ
 ## Development Timeline
 
   ### Day One: 
+  - [ ] set up files and folders
   - [ ] find proper APIs for generating Hands, displaying cards
   - [ ] find proper API for calculating winner
   
-  
+  ### Day Two: 
+  - [ ] interact with one players hand, select card and remove that card from the remainder of the deck
