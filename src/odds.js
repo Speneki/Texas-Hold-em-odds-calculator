@@ -30,7 +30,7 @@ function setHeroHand() {
 }
 
 hero1.on("click", function () {
-    heroHand[0] = cards[Math.floor(Math.random() * cards.length)]
+    heroHand[0] = cards[Math.floor(Math.random() * cards.length)].code
     console.log(heroHand)
     if (!heroHand.includes(null) && !villanHand.includes(null)) {
         d3.select("#heroHand").remove()
@@ -41,7 +41,7 @@ hero1.on("click", function () {
 })
 
 hero2.on("click", function () {
-    heroHand[1] = cards[Math.floor(Math.random() * cards.length)]
+    heroHand[1] = cards[Math.floor(Math.random() * cards.length)].code
     console.log(heroHand)
     if (!heroHand.includes(null) && !villanHand.includes(null)) {
         d3.select("#heroHand").remove()
@@ -53,7 +53,7 @@ hero2.on("click", function () {
 
 
 villan1.on("click", function () {
-    villanHand[0] = cards[Math.floor(Math.random() * cards.length)]
+    villanHand[0] = cards[Math.floor(Math.random() * cards.length)].code
     console.log(villanHand)
     if (!heroHand.includes(null) && !villanHand.includes(null)) {
         d3.select("#heroHand").remove()
@@ -64,7 +64,7 @@ villan1.on("click", function () {
 })
 
 villan2.on("click", function () {
-    villanHand[1] = cards[Math.floor(Math.random() * cards.length)]
+    villanHand[1] = cards[Math.floor(Math.random() * cards.length)].code
     console.log(villanHand)
     if (!heroHand.includes(null) && !villanHand.includes(null)) {
         d3.select("#heroHand").remove()
@@ -73,7 +73,3 @@ villan2.on("click", function () {
         setVillanHand()
     }
 })
-
-
-
-console.log(cards[1].code)
