@@ -6,6 +6,7 @@ export const board = d3.select("#board")
     .attr("width", 1100);
 
 export const table = board.append("ellipse")
+    .attr("class", "ellipse")
     .attr("cx", 450)
     .attr("cy", 290)
     .attr("rx", 390)
