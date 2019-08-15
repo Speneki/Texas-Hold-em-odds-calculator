@@ -1,210 +1,210 @@
-const cards = [
+export const cards = [
     {
-        code: "2C",
+        code: "2c",
         value: "2",
         image: "https://deckofcardsapi.com/static/img/2C.png"
     }, {
-        code: "3C",
+        code: "3c",
         value: "3",
         image: "https://deckofcardsapi.com/static/img/3C.png"
     }, {
-        code: "4C",
+        code: "4c",
         value: "4",
         image: "https://deckofcardsapi.com/static/img/4C.png"
     }, {
-        code: "5C",
+        code: "5c",
         value: "5",
         image: "https://deckofcardsapi.com/static/img/5C.png"
     }, {
-        code: "6C",
+        code: "6c",
         value: "6",
         image: "https://deckofcardsapi.com/static/img/6C.png"
     }, {
-        code: "7C",
+        code: "7c",
         value: "7",
         image: "https://deckofcardsapi.com/static/img/7C.png"
     }, {
-        code: "8C",
+        code: "8c",
         value: "8",
         image: "https://deckofcardsapi.com/static/img/8C.png"
     }, {
-        code: "9C",
+        code: "9c",
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9C.png"
     }, {
-        code: "0C",
+        code: "0c",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0C.png"
     }, {
-        code: "JC",
+        code: "Jc",
         value: "JACK",
         image: "https://deckofcardsapi.com/static/img/JC.png"
     }, {
-        code: "QC",
+        code: "Qc",
         value: "QUEEN",
         image: "https://deckofcardsapi.com/static/img/QC.png"
     }, {
-        code: "KC",
+        code: "Kc",
         value: "KING",
         image: "https://deckofcardsapi.com/static/img/KC.png"
     }, {
-        code: "AC",
+        code: "Ac",
         value: "ACE",
         image: "https://deckofcardsapi.com/static/img/AC.png"
     }, {
-        code: "2D",
+        code: "2d",
         value: "2",
         image: "https://deckofcardsapi.com/static/img/2D.png"
     }, {
-        code: "3D",
+        code: "3d",
         value: "3",
         image: "https://deckofcardsapi.com/static/img/3D.png"
     }, {
-        code: "4D",
+        code: "4d",
         value: "4",
         image: "https://deckofcardsapi.com/static/img/4D.png"
     }, {
-        code: "5D",
+        code: "5d",
         value: "5",
         image: "https://deckofcardsapi.com/static/img/5D.png"
     }, {
-        code: "6D",
+        code: "6d",
         value: "6",
         image: "https://deckofcardsapi.com/static/img/6D.png"
     }, {
-        code: "7D",
+        code: "7d",
         value: "7",
         image: "https://deckofcardsapi.com/static/img/7D.png"
     }, {
-        code: "8D",
+        code: "8d",
         value: "8",
         image: "https://deckofcardsapi.com/static/img/8D.png"
     }, {
-        code: "9D",
+        code: "9d",
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9D.png"
     }, {
-        code: "0D",
+        code: "0d",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0D.png"
     }, {
-        code: "JD",
+        code: "Jd",
         value: "JACK",
         image: "https://deckofcardsapi.com/static/img/JD.png"
     }, {
-        code: "QD",
+        code: "Qd",
         value: "QUEEN",
         image: "https://deckofcardsapi.com/static/img/QD.png"
     }, {
-        code: "KD",
+        code: "Kd",
         value: "KING",
         image: "https://deckofcardsapi.com/static/img/KD.png"
     }, {
-        code: "AD",
+        code: "Ad",
         value: "ACE",
         image: "https://deckofcardsapi.com/static/img/aceDiamonds.png"
     }, {
-        code: "2H",
+        code: "2h",
         value: "2",
         image: "https://deckofcardsapi.com/static/img/2H.png"
     }, {
-        code: "3H",
+        code: "3h",
         value: "3",
         image: "https://deckofcardsapi.com/static/img/3H.png"
     }, {
-        code: "4H",
+        code: "4h",
         value: "4",
         image: "https://deckofcardsapi.com/static/img/4H.png"
     }, {
-        code: "5H",
+        code: "5h",
         value: "5",
         image: "https://deckofcardsapi.com/static/img/5H.png"
     }, {
-        code: "6H",
+        code: "6h",
         value: "6",
         image: "https://deckofcardsapi.com/static/img/6H.png"
     }, {
-        code: "7H",
+        code: "7h",
         value: "7",
         image: "https://deckofcardsapi.com/static/img/7H.png"
     }, {
-        code: "8H",
+        code: "8h",
         value: "8",
         image: "https://deckofcardsapi.com/static/img/8H.png"
     }, {
-        code: "9H",
+        code: "9h",
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9H.png"
     }, {
-        code: "0H",
+        code: "0h",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0H.png"
     }, {
-        code: "JH",
+        code: "Jh",
         value: "JACK",
         image: "https://deckofcardsapi.com/static/img/JH.png"
     }, {
-        code: "QH",
+        code: "Qh",
         value: "QUEEN",
         image: "https://deckofcardsapi.com/static/img/QH.png"
     }, {
-        code: "KH",
+        code: "Kh",
         value: "KING",
         image: "https://deckofcardsapi.com/static/img/KH.png"
     }, {
-        code: "AH",
+        code: "Ah",
         value: "ACE",
         image: "https://deckofcardsapi.com/static/img/AH.png"
     }, {
-        code: "2S",
+        code: "2s",
         value: "2",
         image: "https://deckofcardsapi.com/static/img/2S.png"
      }, {
-        code: "3S",
+        code: "3s",
         value: "3",
         image: "https://deckofcardsapi.com/static/img/3S.png"
     }, {
-        code: "4S",
+        code: "4s",
         value: "4",
         image: "https://deckofcardsapi.com/static/img/4S.png"
     }, {
-        code: "5S",
+        code: "5s",
         value: "5",
         image: "https://deckofcardsapi.com/static/img/5S.png"
     } , {
-        code: "6S",
+        code: "6s",
         value: "6",
         image: "https://deckofcardsapi.com/static/img/6S.png"
     } , {
-        code: "7S",
+        code: "7s",
         value: "7",
         image: "https://deckofcardsapi.com/static/img/7S.png"
     }, {
-        code: "8S",
+        code: "8s",
         value: "8",
         image: "https://deckofcardsapi.com/static/img/8S.png"
     }, {
-        code: "9S",
+        code: "9s",
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9S.png"
     }, {
-        code: "0S",
+        code: "0s",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0S.png"
     }, {
-        code: "JS",
+        code: "Js",
         value: "JACK",
         image: "https://deckofcardsapi.com/static/img/JS.png"
     }, {
-        code: "QS",
+        code: "Qs",
         value: "QUEEN",
         image: "https://deckofcardsapi.com/static/img/QS.png"
     }, {
-        code: "KS",
+        code: "Ks",
         value: "KING",
         image: "https://deckofcardsapi.com/static/img/KS.png"
     }, {
-        code: "AS",
+        code: "As",
         value: "ACE",
         image: "https://deckofcardsapi.com/static/img/AS.png"
     }

@@ -2,9 +2,10 @@
     font-size: 44px;
     padding-left: 297px;
     font-family: sans-serif; 
+    color: white;
 }
 
-rect image {
-    height: 100%;
-    width: 100%;
+html {
+    background-image: url(https://files.slack.com/files-pri/T03GU501J-FM268D874/royal_cash_pmvc_custom_background_r24e2066892fb499aba595de426837fa1.jpg);
+    background-size: 100% 100%;
 }
