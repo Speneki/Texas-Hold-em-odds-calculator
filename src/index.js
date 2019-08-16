@@ -90,14 +90,15 @@ function villanPercentage(args) {
     }
 }
 
+
 Setup.hero1.on("click", function () {
     let num = Math.floor(Math.random() * cards.length)
+    console.log(cards[num].code)
     heroHand[0] = cards[num].code
     d3.select("#hero1-photo").remove()
-        .attr("stroke", "red")
 
     let heroOneCardPhoto = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
+        .attr("xlink:href", cards[num].image) 
         .attr("id", "hero1-photo")
         .attr("x", 150)
         .attr("y", 25)
@@ -109,6 +110,7 @@ Setup.hero1.on("click", function () {
 
 Setup.hero2.on("click", function () {
     let num = Math.floor(Math.random() * cards.length)
+    console.log(cards[num].code)
     heroHand[1] = cards[num].code
     d3.select("#hero2-photo").remove()
     let heroTwoCardPhoto = Setup.board.append("svg:image")
@@ -129,7 +131,7 @@ Setup.villan1.on("click", function () {
     let num = Math.floor(Math.random() * cards.length)
     villanHand[0] = cards[num].code
     d3.select("#villan1-photo").remove()
-
+    console.log(cards[num].code)
     let villanOneCardPhoto = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "villan1-photo")
@@ -144,7 +146,7 @@ Setup.villan1.on("click", function () {
 Setup.villan2.on("click", function () {
     let num = Math.floor(Math.random() * cards.length)
     villanHand[1] = cards[num].code
-
+    console.log(cards[num].code)
     let villanTwoCardPhoto = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "villan2-photo")
@@ -152,7 +154,7 @@ Setup.villan2.on("click", function () {
         .attr("y", 25)
         .attr("height", 150)
         .attr("width", 100);
-        
+
     handsSelected()
 })
 
@@ -269,3 +271,8 @@ for (let i = 39; i < 52; i++) {
         .attr("height", 80)
         .attr("width", 60)
 }
+
+
+d3.select("#hero1-photo").on("click", function () {
+    d3.select("#hero1-photo").remove()
+})
