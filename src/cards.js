@@ -32,7 +32,7 @@ export const cards = [
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9C.png"
     }, {
-        code: "0c",
+        code: "Tc",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0C.png"
     }, {
@@ -84,7 +84,7 @@ export const cards = [
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9D.png"
     }, {
-        code: "0d",
+        code: "Td",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0D.png"
     }, {
@@ -136,7 +136,7 @@ export const cards = [
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9H.png"
     }, {
-        code: "0h",
+        code: "Th",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0H.png"
     }, {
@@ -188,7 +188,7 @@ export const cards = [
         value: "9",
         image: "https://deckofcardsapi.com/static/img/9S.png"
     }, {
-        code: "0s",
+        code: "Ts",
         value: "10",
         image: "https://deckofcardsapi.com/static/img/0S.png"
     }, {

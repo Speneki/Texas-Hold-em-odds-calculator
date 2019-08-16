@@ -41,7 +41,6 @@ function setVillanHand() {
     villanPercentage(fallenCardsArr)
 }
 
-
 function heroPercentage(args) {
     d3.selectAll("#percentages").remove();
     let odds = calculateEquity([heroHand, villanHand], args)
@@ -64,7 +63,6 @@ function heroPercentage(args) {
         heroPercentages.style("fill", "red");
     }
 }
-
 
 function villanPercentage(args) {
     let odds = calculateEquity([heroHand, villanHand], args)
@@ -103,28 +101,13 @@ function heroTwoSelect(evt) {
     heroHandDos(this.id.split("-")[1])
 }
 
-function villanOneSelect(evt) {
-    villanHandUno(this.id.split("-")[1])
-}
-
-function villanTwoSelect(evt) {
-    villanHandDos(this.id.split("-")[1])
-}
-function flopOneSelect(evt) {
-    flopFallOne(this.id.split("-")[1])
-}
-function flopTwoSelect(evt) {
-    flopFallTwo(this.id.split("-")[1])
-}
-function flopThreeSelect(evt) {
-    flopFallThree(this.id.split("-")[1])
-}
-function flopFourSelect(evt) {
-    flopFallFour(this.id.split("-")[1])
-}
-function flopFiveSelect(evt) {
-    flopFallFive(this.id.split("-")[1])
-}
+function villanOneSelect(evt) {villanHandUno(this.id.split("-")[1])}
+function villanTwoSelect(evt) {villanHandDos(this.id.split("-")[1])}
+function flopOneSelect(evt) {flopFallOne(this.id.split("-")[1])}
+function flopTwoSelect(evt) {flopFallTwo(this.id.split("-")[1])}
+function flopThreeSelect(evt) {flopFallThree(this.id.split("-")[1])}
+function flopFourSelect(evt) {flopFallFour(this.id.split("-")[1])}
+function flopFiveSelect(evt) {flopFallFive(this.id.split("-")[1])}
 
 function heroHandUno(num) {
     heroHand[0] = cards[num].code
@@ -157,7 +140,6 @@ function heroHandUno(num) {
 }
 
 function heroHandDos(num) {
-    console.log(cards[num].code)
     heroHand[1] = cards[num].code
     d3.select("#hero2-photo").remove()
     let heroTwoCardPhoto = Setup.board.append("svg:image")
