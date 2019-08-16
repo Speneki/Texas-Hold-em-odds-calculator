@@ -1,4 +1,5 @@
 const cardBack = "https://opengameart.org/sites/default/files/card%20back%20orange.png"
+import { cards } from "./cards"
 
 export const board = d3.select("#board")
     .attr("x", 1000)
@@ -96,3 +97,49 @@ export const river = board.append("svg:image")
     .attr("height", 136)
     .attr("fill", "white")
     .style("stroke", "black")
+
+
+for (let i = 0; i < 13; i++) {
+    board.append("svg:image")
+        .attr("xlink:href", cards[i].image)
+        .attr("id", "cardselect-" + i)
+        .attr("class", "cards")
+        .attr("height", 80)
+        .attr("width", 60)
+        .attr("x", 860)
+        .attr("y", 36 * i + 10)
+}
+
+
+for (let i = 13; i < 26; i++) {
+    board.append("svg:image")
+        .attr("xlink:href", cards[i].image)
+        .attr("id", "cardselect-" + i)
+        .attr("class", "cards")
+        .attr("x", 920)
+        .attr("y", 36 * (i - 13) + 10)
+        .attr("height", 80)
+        .attr("width", 60)
+}
+
+for (let i = 26; i < 39; i++) {
+    board.append("svg:image")
+        .attr("xlink:href", cards[i].image)
+        .attr("id", "cardselect-" + i)
+        .attr("class", "cards")
+        .attr("x", 980)
+        .attr("y", 36 * (i - 26) + 10)
+        .attr("height", 80)
+        .attr("width", 60)
+}
+
+for (let i = 39; i < 52; i++) {
+    board.append("svg:image")
+        .attr("xlink:href", cards[i].image)
+        .attr("id", "cardselect-" + i)
+        .attr("class", "cards")
+        .attr("x", 1040)
+        .attr("y", 36 * (i - 39) + 10)
+        .attr("height", 80)
+        .attr("width", 60)
+}
