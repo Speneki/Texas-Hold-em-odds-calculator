@@ -1,6 +1,7 @@
 const cardBack = "https://opengameart.org/sites/default/files/card%20back%20orange.png"
 
 export const board = d3.select("#board")
+    .attr("x", 1000)
     .append("svg")
     .attr("height", 600)
     .attr("width", 1100);
@@ -22,7 +23,7 @@ export const hero1 = board.append("svg:image")
     .attr("width", 100)
     .attr("height", 136)
     .style("fill", "white")
-    .style("stroke", "black")
+    .style("stroke", "red")
 
 export const hero2 = board.append("svg:image")
     .attr("xlink:href", cardBack)
