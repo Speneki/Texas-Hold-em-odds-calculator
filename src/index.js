@@ -13,30 +13,35 @@ function handsSelected() {
         d3.select("#heroHand").remove()
         d3.select("#villanHand").remove()
         setHeroHand()
+        setVillanHand()
     }
 }
 
-function villanPercentage(args) {
-    let odds = calculateEquity([heroHand, villanHand], args)
-    let villanPercentages = Setup.board.append("text")
-        .attr("id", "percentages")
-        .attr("x", 560)
-        .attr("y", 135)
-        .text("Win: " + (odds[1].wins / odds[1].count * 100).toFixed(2) + "%")
-        .style("fill", "white")
-    let heroTiePercentages = Setup.board.append("text")
-        .attr("id", "percentages")
-        .attr("x", 560)
-        .attr("y", 160)
-        .text("Tie: " + (odds[0].ties / odds[0].count * 100).toFixed(2) + "%")
-        .style("fill", "orange")
-
-    if ((odds[1].wins / odds[1].count * 100) > (odds[0].wins / odds[0].count * 100)) {
-        villanPercentages.style("fill", "white")
-    } else {
-        villanPercentages.style("fill", "red");
-    }   
+function setHeroHand() {
+    Setup.board.append("rect")
+        .attr("id", "heroHand")
+        .attr("x", 150)
+        .attr("y", 110)
+        .attr("width", 210)
+        .attr("height", 60)
+        .attr("fill", "rgba(128,128,128,0.9)")
+    let fallenCardsArrHero = fallenCards.filter(card => card !== null)
+    heroPercentage(fallenCardsArrHero)
 }
+
+function setVillanHand() {
+    Setup.board.append("rect")
+        .attr("id", "villanHand")
+        .attr("x", 550)
+        .attr("y", 110)
+        .attr("width", 210)
+        .attr("height", 60)
+        .attr("fill", "rgba(128,128,128,0.9)")
+
+    let fallenCardsArr = fallenCards.filter(card => card !== null)
+    villanPercentage(fallenCardsArr)
+}
+
 
 function heroPercentage(args) {
     d3.selectAll("#percentages").remove();
@@ -62,31 +67,28 @@ function heroPercentage(args) {
     }
 }
 
-function setVillanHand() {
-    Setup.board.append("rect")
-        .attr("id", "villanHand")
-        .attr("x", 550)
-        .attr("y", 110)
-        .attr("width", 210)
-        .attr("height", 60)
-        .attr("fill", "rgba(128,128,128,0.9)")
 
-    let fallenCardsArr = fallenCards.filter(card => card !== null)
-    villanPercentage(fallenCardsArr)
+function villanPercentage(args) {
+    let odds = calculateEquity([heroHand, villanHand], args)
+    let villanPercentages = Setup.board.append("text")
+        .attr("id", "percentages")
+        .attr("x", 560)
+        .attr("y", 135)
+        .text("Win: " + (odds[1].wins / odds[1].count * 100).toFixed(2) + "%")
+        .style("fill", "white")
+    let heroTiePercentages = Setup.board.append("text")
+        .attr("id", "percentages")
+        .attr("x", 560)
+        .attr("y", 160)
+        .text("Tie: " + (odds[0].ties / odds[0].count * 100).toFixed(2) + "%")
+        .style("fill", "orange")
+
+    if ((odds[1].wins / odds[1].count * 100) > (odds[0].wins / odds[0].count * 100)) {
+        villanPercentages.style("fill", "white")
+    } else {
+        villanPercentages.style("fill", "red");
+    }
 }
-
-function setHeroHand() {
-    Setup.board.append("rect")
-        .attr("id", "heroHand")
-        .attr("x", 150)
-        .attr("y", 110)
-        .attr("width", 210)
-        .attr("height", 60)
-        .attr("fill", "rgba(128,128,128,0.9)")
-    let fallenCardsArrHero = fallenCards.filter(card => card !== null)
-    heroPercentage(fallenCardsArrHero)
-}
-
 
 Setup.hero1.on("click", function () {
     let num = Math.floor(Math.random() * cards.length)
