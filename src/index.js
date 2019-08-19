@@ -7,6 +7,11 @@ let heroHand = [null, null]
 let villanHand = [null, null]
 let fallenCards = [null, null, null, null, null]
 
+
+function gauge() {
+    
+}
+
 function handsSelected() {
     if (!heroHand.includes(null) && !villanHand.includes(null)) {
         d3.select("#heroHand").remove()

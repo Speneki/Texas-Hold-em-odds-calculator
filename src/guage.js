@@ -11,7 +11,7 @@ export let Gauge = function (configuration) {
         pointerHeadLengthPercent: 0.9,
 
         minValue: 0,
-        maxValue: 100000,
+        maxValue: 10000,
 
         minAngle: -90,
         maxAngle: 90,
