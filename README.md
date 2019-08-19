@@ -32,12 +32,12 @@ Here we can see the way my proposal should look as a completed project. Each rec
   
   ### Day Two: 
   - [x] reseatch how to place anything on the screen using DOM manipulation
-  - [ ] Get my files to interact properlly 
-  - [ ] render cards on the screen
-  - [ ] have cards fill on click
+  - [x] Get my files to interact properlly 
   
   ### Day Three:
-  - [ ]  
-  - [ ] 
-  - [ ] 
-  - [ ] 
+  - [x] render cards on the screen
+  - [x] have cards fill on click
+  
+  ### Day Four
+  - [x] Live update on wach card click the percentages of win/tie
+  - [ ] Add more flair to the look of the site
