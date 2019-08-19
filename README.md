@@ -12,6 +12,8 @@ Here we can see the way my proposal should look as a completed project. Each rec
 
 
 ![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.25.39%20AM.png)
+
+![percentages](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.33.36%20AM.png)
 ## Functionality: 
   - Users can place any hand against any other possible hand thier opponent could make
   - Users can quickly calculate their available remaining outs to see their change of winning
