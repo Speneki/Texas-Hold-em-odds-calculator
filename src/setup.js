@@ -1,4 +1,4 @@
-const cardBack = "https://opengameart.org/sites/default/files/card%20back%20orange.png"
+const cardBack = "https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_1024x1024.png?v=1535755695"
 import { cards } from "./cards"
 
 export const board = d3.select("#board")
@@ -7,15 +7,15 @@ export const board = d3.select("#board")
     .attr("height", 600)
     .attr("width", 1100);
 
-export const table = board.append("ellipse")
+export const table = board.append("svg:image")
+    .attr("xlink:href", "/src/assets/spencertable.png")
     .attr("class", "ellipse")
-    .attr("cx", 450)
-    .attr("cy", 290)
-    .attr("rx", 390)
-    .attr("ry", 200)
+    .attr('x', 52)
+    .attr('y', 70)
+    .attr("width", 860)
+    .attr("height", 430)
     .attr("fill", "green")
-    .style("stroke", "black")
-    .style("stroke-width", 30);
+
 
 export const hero1 = board.append("svg:image")
     .attr("xlink:href", cardBack)
@@ -55,7 +55,7 @@ export const villan2 = board.append("svg:image")
 
 export const flop1 = board.append("svg:image")
     .attr("xlink:href", cardBack)
-    .attr("x", 172)
+    .attr("x", 185)
     .attr("y", 252)
     .attr("width", 100)
     .attr("height", 136)
@@ -64,7 +64,7 @@ export const flop1 = board.append("svg:image")
 
 export const flop2 = board.append("svg:image")
     .attr("xlink:href", cardBack)
-    .attr("x", 282)
+    .attr("x", 295)
     .attr("y", 252)
     .attr("width", 100)
     .attr("height", 136)
@@ -73,7 +73,7 @@ export const flop2 = board.append("svg:image")
 
 export const flop3 = board.append("svg:image")
     .attr("xlink:href", cardBack)
-    .attr("x", 392)
+    .attr("x", 405)
     .attr("y", 252)
     .attr("width", 100)
     .attr("height", 136)
@@ -82,7 +82,7 @@ export const flop3 = board.append("svg:image")
 
 export const turn = board.append("svg:image")
     .attr("xlink:href", cardBack)
-    .attr("x", 502)
+    .attr("x", 515)
     .attr("y", 252)
     .attr("width", 100)
     .attr("height", 136)
@@ -91,7 +91,7 @@ export const turn = board.append("svg:image")
 
 export const river = board.append("svg:image")
     .attr("xlink:href", cardBack)
-    .attr("x", 612)
+    .attr("x", 625)
     .attr("y", 252)
     .attr("width", 100)
     .attr("height", 136)

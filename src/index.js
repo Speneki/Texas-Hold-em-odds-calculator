@@ -6,8 +6,7 @@ import { Gauge} from "./guage"
 let heroHand = [null, null]
 let villanHand = [null, null]
 let fallenCards = [null, null, null, null, null]
-
-
+2
 function gauge() {
     
 }
@@ -167,7 +166,7 @@ function heroHandDos(num) {
 
     Setup.board.append("text")
         .attr('id', 'instruction')
-        .attr('x', 380)
+        .attr('x', 330)
         .attr('y', 200)
         .attr("fill", "white")
         .text("Select two  more cards from the right the opponents hand")
@@ -265,7 +264,7 @@ function flopFallOne(num) {
     let boardOne = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "board1-photo")
-        .attr("x", 172)
+        .attr("x", 185)
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
@@ -294,7 +293,7 @@ function flopFallTwo(num) {
     let boardTwo = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "board2-photo")
-        .attr("x", 282)
+        .attr("x", 295)
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
@@ -324,7 +323,7 @@ function flopFallThree(num) {
     let boardThree = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "board3-photo")
-        .attr("x", 392)
+        .attr("x", 405)
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
@@ -362,7 +361,7 @@ function flopFallFour(num) {
     let boardFour = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "board4-photo")
-        .attr("x", 502)
+        .attr("x", 515)
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
@@ -400,7 +399,7 @@ function flopFallFive(num) {
     let boardFive = Setup.board.append("svg:image")
         .attr("xlink:href", cards[num].image)
         .attr("id", "board5-photo")
-        .attr("x", 612)
+        .attr("x", 625)
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
