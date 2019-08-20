@@ -169,7 +169,7 @@ function heroHandDos(num) {
         .attr('x', 330)
         .attr('y', 200)
         .attr("fill", "white")
-        .text("Select two  more cards from the right the opponents hand")
+        .text("Select two  more cards from the right as the opponents hand")
 
     d3.select("#hero2-photo").on("click", () => {
         d3.select("#hero2-photo").remove()
@@ -406,14 +406,6 @@ function flopFallFive(num) {
 
 
     d3.select("#instruction").remove()
-
-
-    // Setup.board.append("text")
-
-    //     .attr('x', 340)
-    //     .attr('y', 420)
-    //     .attr("fill", "white")
-
 
     Setup.board.append("a")
         .attr("xlink:href", ".")
