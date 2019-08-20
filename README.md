@@ -10,6 +10,10 @@ Prior to studying software development, I made a living playing Texas Hold 'em. 
 
 Here we can see the way my proposal should look as a completed project. Each rectangle will be a clickable box that gives an option to place any of the remaining remaining card from the deck. It will claculate the odds of one hand against one opponent preflop, on the flop, on the turn and the river in a standard 52 card deck.
 
+
+![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.25.39%20AM.png)
+
+![percentages](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.33.36%20AM.png)
 ## Functionality: 
   - Users can place any hand against any other possible hand thier opponent could make
   - Users can quickly calculate their available remaining outs to see their change of winning
@@ -17,9 +21,9 @@ Here we can see the way my proposal should look as a completed project. Each rec
   
 ## MVPS
   - [x] logic behind any hand vs any other hand calculation 
-  - [ ] interface in which a user can decide thier hand and their opponents
+  - [x] interface in which a user can decide thier hand and their opponents
   - [ ] cards, when selected, are removed from the possible selection of cards
-  - [ ] percentage updates as soon as a calculation is available
+  - [x] percentage updates as soon as a calculation is available
   
 ## Development Timeline
 
