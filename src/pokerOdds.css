@@ -29,3 +29,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     max-width: 1100px;
     margin: 0 auto;
 }
+
+#instruction {
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Carnivalee Freakshow";
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+#final-instruction{
+    font-size: 30px;
+    padding: 10px;
+    font-family: "Carnivalee Freakshow";
+}
+#final-instruction:hover{
+    text-decoration: underline;
+}

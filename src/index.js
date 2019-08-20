@@ -114,6 +114,13 @@ function flopThreeSelect(evt) {flopFallThree(this.id.split("-")[1])}
 function flopFourSelect(evt) {flopFallFour(this.id.split("-")[1])}
 function flopFiveSelect(evt) {flopFallFive(this.id.split("-")[1])}
 
+Setup.board.append("text")
+    .attr('id', 'instruction')
+    .attr('x', 170)
+    .attr('y', 200)
+    .attr("fill", "white")
+    .text("Select two cards from the \n right as this players hand")
+    
 function heroHandUno(num) {
     heroHand[0] = cards[num].code
     let heroOneCardPhoto = Setup.board.append("svg:image")
@@ -154,8 +161,16 @@ function heroHandDos(num) {
         .attr("y", 25)
         .attr("height", 150)
         .attr("width", 100);
+    d3.select("#instruction").remove()
 
     handsSelected()
+
+    Setup.board.append("text")
+        .attr('id', 'instruction')
+        .attr('x', 380)
+        .attr('y', 200)
+        .attr("fill", "white")
+        .text("Select two  more cards from the right the opponents hand")
 
     d3.select("#hero2-photo").on("click", () => {
         d3.select("#hero2-photo").remove()
@@ -214,7 +229,18 @@ function villanHandDos(num) {
         .attr("height", 150)
         .attr("width", 100);
 
+    d3.select("#instruction").remove()
+
     handsSelected()
+
+
+    Setup.board.append("text")
+        .attr('id', 'instruction')
+        .attr('x', 200)
+        .attr('y', 420)
+        .attr("fill", "white")
+        .text("Select three community cards for the flop")
+
     d3.select("#villan2-photo").on("click", () => {
         d3.select("#villan2-photo").remove()
         villanHand[1] = null
@@ -303,6 +329,16 @@ function flopFallThree(num) {
         .attr("height", 150)
         .attr("width", 100);
 
+    d3.select("#instruction").remove()
+
+
+    Setup.board.append("text")
+        .attr('id', 'instruction')
+        .attr('x', 300)
+        .attr('y', 420)
+        .attr("fill", "white")
+        .text("Select one community cards for the turn")
+
     d3.select("#board3-photo").on("click", () => {
         d3.select("#board3-photo").remove()
         fallenCards[2] = null
@@ -331,6 +367,16 @@ function flopFallFour(num) {
         .attr("height", 150)
         .attr("width", 100);
 
+    d3.select("#instruction").remove()
+
+
+    Setup.board.append("text")
+        .attr('id', 'instruction')
+        .attr('x', 350)
+        .attr('y', 420)
+        .attr("fill", "white")
+        .text("Select one community cards for the river")
+
     d3.select("#board4-photo").on("click", () => {
         d3.select("#board4-photo").remove()
         fallenCards[3] = null
@@ -358,6 +404,25 @@ function flopFallFive(num) {
         .attr("y", 245)
         .attr("height", 150)
         .attr("width", 100);
+
+
+    d3.select("#instruction").remove()
+
+
+    // Setup.board.append("text")
+
+    //     .attr('x', 340)
+    //     .attr('y', 420)
+    //     .attr("fill", "white")
+
+
+    Setup.board.append("a")
+        .attr("xlink:href", ".")
+        .attr('id', 'final-instruction')
+        .append("text")
+        .attr('x', 340)
+        .attr('y', 420)
+        .text("Click Here to Reset!"); 
 
     d3.select("#board5-photo").on("click", () => {
         d3.select("#board5-photo").remove()
