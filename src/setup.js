@@ -8,7 +8,7 @@ export const board = d3.select("#board")
     .attr("width", 1100);
 
 export const table = board.append("svg:image")
-    .attr("xlink:href", "/src/assets/spencertable.png")
+    .attr("xlink:href", "https://i.imgur.com/VHDSPO7.png")
     .attr("class", "ellipse")
     .attr('x', 52)
     .attr('y', 70)
