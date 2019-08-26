@@ -57,3 +57,17 @@ background-size: cover;
 #final-instruction:hover{
     text-decoration: underline;
 }
+
+.linkz li {
+    font-size: 70px;
+    list-style-type: none;
+    position: relative;
+    width: 60px;
+    /* display: inline-block; */
+    bottom: 500px;
+}
+
+a {
+    color: black;
+    /* text-shadow: 1px 1px white; */
+}
