@@ -5,8 +5,8 @@ import { Gauge} from "./guage"
 
 let heroHand = [null, null]
 let villanHand = [null, null]
-let fallenCards = [null, null, null, null, null]
-2
+let fallenCards = []
+
 function gauge() {
     
 }

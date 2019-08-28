@@ -54,6 +54,7 @@ background-size: cover;
     text-shadow: 2px 2px white;
     font-family: "Carnivalee Freakshow";
 }
+
 #final-instruction:hover{
     text-decoration: underline;
 }
@@ -63,11 +64,16 @@ background-size: cover;
     list-style-type: none;
     position: relative;
     width: 60px;
-    /* display: inline-block; */
     bottom: 500px;
+}
+
+.linkz {
+    text-align: center;
 }
 
 a {
     color: black;
-    /* text-shadow: 1px 1px white; */
+}
+a:hover {
+  color: white;
 }
