@@ -44,7 +44,7 @@ function setVillanHand() {
 
 function heroPercentage(args) {
     d3.selectAll("#percentages").remove();
-    let odds = calculateEquity([heroHand, villanHand], args, 1000)
+    let odds = calculateEquity([heroHand, villanHand], args, 1500, false)
     let heroPercentages = Setup.board.append("text")
         .attr("id", "percentages")
         .attr("x", 160)
@@ -67,7 +67,7 @@ function heroPercentage(args) {
 
 function villanPercentage(args) {
     // debugger
-    let odds = calculateEquity([heroHand, villanHand], args, 1000)
+    let odds = calculateEquity([heroHand, villanHand], args, 1500, false)
     let villanPercentages = Setup.board.append("text")
         .attr("id", "percentages")
         .attr("x", 560)
@@ -140,9 +140,7 @@ function heroHandUno(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        if (selectybois.includes(i)) {
-            console.log(i)
-        } else {
+        if (!selectybois.includes(i))  {
             const card = cardsArr[i];
             card.addEventListener("click", heroTwoSelect);
         }
@@ -258,7 +256,6 @@ function villanHandDos(num) {
 
 
 function flopFallOne(num) {
-    console.log(num)
     fallenCards[0] = cards[num].code
     // debugger
     handsSelected()
@@ -290,8 +287,6 @@ function flopFallOne(num) {
 
 
 function flopFallTwo(num) {
-    console.log(num)
-    // debugger
     fallenCards[1] = cards[num].code
     handsSelected()
 
