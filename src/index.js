@@ -140,15 +140,12 @@ function heroHandUno(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        for (let j = 0; j < selectybois.length; j++) {
-            if (selectybois[j] == i) {
-                console.log(i)
-            } else {
-                const card = cardsArr[i];
-                card.addEventListener("click", heroTwoSelect);
-            }
-        } 
-
+        if (selectybois.includes(i)) {
+            console.log(i)
+        } else {
+            const card = cardsArr[i];
+            card.addEventListener("click", heroTwoSelect);
+        }
     }
 }
 
@@ -183,8 +180,10 @@ function heroHandDos(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", villanOneSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", villanOneSelect);
+        }
     }
 }
 
@@ -211,8 +210,11 @@ function villanHandUno(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", villanTwoSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", villanTwoSelect);
+        }
+
     }
 }
 
@@ -247,8 +249,10 @@ function villanHandDos(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", flopOneSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", flopOneSelect);
+        }
     }
 }
 
@@ -277,8 +281,10 @@ function flopFallOne(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", flopTwoSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", flopTwoSelect);
+        }
     }
 }
 
@@ -307,8 +313,10 @@ function flopFallTwo(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", flopThreeSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", flopThreeSelect);
+        }
     }
 }
 
@@ -343,8 +351,10 @@ function flopFallThree(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", flopFourSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", flopFourSelect);
+        }
     }
 }
 
@@ -378,8 +388,10 @@ function flopFallFour(num) {
     }
 
     for (let i = 0; i < cardsArr.length; i++) {
-        const card = cardsArr[i];
-        card.addEventListener("click", flopFiveSelect);
+        if (!selectybois.includes(i)) {
+            const card = cardsArr[i];
+            card.addEventListener("click", flopFiveSelect);
+        }
     }
 }
 
