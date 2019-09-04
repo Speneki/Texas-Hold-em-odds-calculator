@@ -80,7 +80,7 @@ export let Gauge = function (configuration) {
 
 
         // Arc Defaults
-        debugger
+
         arc = d3.svg.arc()
             .innerRadius(iR)
             .outerRadius(oR)

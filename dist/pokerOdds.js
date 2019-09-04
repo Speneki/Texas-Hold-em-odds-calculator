@@ -855,7 +855,6 @@ var Gauge = exports.Gauge = function Gauge(configuration) {
 
 
         // Arc Defaults
-        debugger;
         arc = d3.svg.arc().innerRadius(iR).outerRadius(oR).startAngle(deg2rad(-90));
 
         // Place svg element
