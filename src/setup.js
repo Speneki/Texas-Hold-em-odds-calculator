@@ -1,4 +1,4 @@
-const cardBack = "https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_1024x1024.png?v=1535755695"
+export const cardBack = "https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_1024x1024.png?v=1535755695"
 import { cards } from "./cards"
 
 export const board = d3.select("#board")
