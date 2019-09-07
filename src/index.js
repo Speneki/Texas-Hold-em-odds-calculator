@@ -44,7 +44,7 @@ function setVillanHand() {
 
 function heroPercentage(args) {
     d3.selectAll("#percentages").remove();
-    let odds = calculateEquity([heroHand, villanHand], args, 1500, false)
+    let odds = calculateEquity([heroHand, villanHand], args, 2000, false)
     let heroPercentages = Setup.board.append("text")
         .attr("id", "percentages")
         .attr("x", 160)
@@ -67,7 +67,7 @@ function heroPercentage(args) {
 
 function villanPercentage(args) {
     // debugger
-    let odds = calculateEquity([heroHand, villanHand], args, 1500, false)
+    let odds = calculateEquity([heroHand, villanHand], args, 2000, false)
     let villanPercentages = Setup.board.append("text")
         .attr("id", "percentages")
         .attr("x", 560)
