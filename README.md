@@ -2,7 +2,7 @@
 
 ## Background and Overview
 
-Prior to studying software development, I spent the majority of my time playing Texas Hold 'em. Both online and live, the odds of winning are something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, after the hand is over it is common for players to discuss or list out the possible cards that could fall as they articulate the mental math they went through in the hand. What I intend to show here is simple and streamlined interface for users to quickly access and calculate that math in between hands.
+Prior to studying software development, I spent the majority of my time playing Texas Hold 'em. Both online and live, the hands equity is something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, after the hand is over it is common for players to discuss or list out the possible cards that could fall as they articulate the mental math they went through in the hand. What I intend to show here is simple and streamlined interface for users to quickly access and calculate that math in between hands.
 
 ## WireFrame: 
 
@@ -13,12 +13,11 @@ Here we can see the way my proposal should look as a completed project. Each rec
 
 ![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/5HfIcdpnSi.gif)
 
+## Functionality: 
+  Upon entering the page, a user is immediately prompted to enter the cards in their hand, then the cards in their opponents. When each hand is filled, the odds are immediately displayed before any cards fall. Equity is calculated using a Monte Carlo system that randomly selects plays through 10,000 poker boards and asserts statistics within ~0.85%. As each community card is selected, up to 10,000 more poker hands are played out, or however many are possible with the cards remaining in the deck. By the last card falling, one player has reaced 100%, and the other 0% chance of winning.
+  
 ![percentages](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.33.36%20AM.png)
 
-## Functionality: 
-  - Users can place any hand against any other possible hand thier opponent could make
-  - Users can quickly calculate their available remaining outs to see their change of winning
-  - It opperates as soon as a calculation is possible
   
 ## MVPS
   - [x] logic behind any hand vs any other hand calculation 
