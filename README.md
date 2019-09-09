@@ -1,5 +1,5 @@
 
-#[ Texas Hold 'em Odds Calculator]( https://speneki.github.io/Texas-Hold-em-odds-calculator/)
+[#Texas Hold 'em Odds Calculator]( https://speneki.github.io/Texas-Hold-em-odds-calculator/)
 
 ## Background and Overview
 
