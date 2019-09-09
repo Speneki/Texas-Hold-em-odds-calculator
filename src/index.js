@@ -66,7 +66,6 @@ function heroPercentage(args) {
 }
 
 function villanPercentage(args) {
-    // debugger
     let odds = calculateEquity([heroHand, villanHand], args, 1200, false)
     let villanPercentages = Setup.board.append("text")
         .attr("id", "percentages")
@@ -121,7 +120,6 @@ Setup.board.append("text")
 function heroHandUno(num) {
     heroHand[0] = cards[num].code
 
-
     d3.select("#hero-1").attr("xlink:href", cards[num].image)
 
     handsSelected()
@@ -155,8 +153,7 @@ function heroHandDos(num) {
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
 
-    Setup.board.append("text")
-        .attr('id', 'instruction')
+    d3.select('#instruction')
         .attr('x', 330)
         .attr('y', 200)
         .attr("fill", "white")
@@ -206,19 +203,15 @@ function villanHandDos(num) {
 
     d3.select("#villan-2").attr("xlink:href", cards[num].image)
 
-    d3.select("#instruction").remove()
-
     handsSelected()
 
     selectybois.push(parseInt(num))
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
 
-    Setup.board.append("text")
-        .attr('id', 'instruction')
+    d3.select('#instruction')
         .attr('x', 200)
         .attr('y', 420)
-        .attr("fill", "white")
         .text("Select three community cards for the flop")
 
     for (let i = 0; i < cardsArr.length; i++) {
@@ -237,20 +230,14 @@ function villanHandDos(num) {
 
 function flopFallOne(num) {
     fallenCards[0] = cards[num].code
-    // debugger
+
+    d3.select("#board-1").attr("xlink:href", cards[num].image)
+
     handsSelected()
 
     selectybois.push(parseInt(num))
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
-    let boardOne = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "board1-photo")
-        .attr("x", 185)
-        .attr("y", 245)
-        .attr("height", 150)
-        .attr("width", 100);
 
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
@@ -268,19 +255,14 @@ function flopFallOne(num) {
 
 function flopFallTwo(num) {
     fallenCards[1] = cards[num].code
+
+    d3.select("#board-2").attr("xlink:href", cards[num].image)
+
     handsSelected()
 
     selectybois.push(parseInt(num))
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
-    let boardTwo = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "board2-photo")
-        .attr("x", 295)
-        .attr("y", 245)
-        .attr("height", 150)
-        .attr("width", 100);
 
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
@@ -297,27 +279,17 @@ function flopFallTwo(num) {
 
 function flopFallThree(num) {
     fallenCards[2] = cards[num].code
+
+    d3.select("#board-3").attr("xlink:href", cards[num].image)
+
     handsSelected()
     selectybois.push(parseInt(num))
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
 
-    let boardThree = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "board3-photo")
-        .attr("x", 405)
-        .attr("y", 245)
-        .attr("height", 150)
-        .attr("width", 100);
-
-    d3.select("#instruction").remove()
-
-
-    Setup.board.append("text")
-        .attr('id', 'instruction')
+    d3.select("#instruction")
         .attr('x', 300)
         .attr('y', 420)
-        .attr("fill", "white")
         .text("Select one community cards for the turn")
 
     for (let i = 0; i < cardsArr.length; i++) {
@@ -335,23 +307,16 @@ function flopFallThree(num) {
 
 function flopFallFour(num) {
     fallenCards[3] = cards[num].code
+
+    d3.select("#board-4").attr("xlink:href", cards[num].image)
+
     handsSelected()
 
     selectybois.push(parseInt(num))
-    let boardFour = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "board4-photo")
-        .attr("x", 515)
-        .attr("y", 245)
-        .attr("height", 150)
-        .attr("width", 100);
-
-    d3.select("#instruction").remove()
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
 
-    Setup.board.append("text")
-        .attr('id', 'instruction')
+    d3.select("#instruction")
         .attr('x', 350)
         .attr('y', 420)
         .attr("fill", "white")
@@ -372,19 +337,14 @@ function flopFallFour(num) {
 
 function flopFallFive(num) {
     fallenCards[4] = cards[num].code
+
+    d3.select("#board-5").attr("xlink:href", cards[num].image)
+
     handsSelected()
 
     selectybois.push(parseInt(num))
 
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
-    let boardFive = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "board5-photo")
-        .attr("x", 625)
-        .attr("y", 245)
-        .attr("height", 150)
-        .attr("width", 100);
 
     d3.select("#instruction").remove()
 
