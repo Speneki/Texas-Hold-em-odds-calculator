@@ -1,4 +1,4 @@
-### Texas Hold 'em Odds Calculator
+# Texas Hold 'em Odds Calculator
 
 [Live link]( https://speneki.github.io/Texas-Hold-em-odds-calculator/)
 
