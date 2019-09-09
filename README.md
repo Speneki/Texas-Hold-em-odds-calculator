@@ -16,7 +16,7 @@ Here we can see the way my proposal should look as a completed project. Each rec
 ![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/readme-display.gif)
 
 ## Functionality: 
-  Upon entering the page, a user is immediately prompted to enter the cards in their hand, then the cards in their opponents. When each hand is filled, the odds are immediately displayed before any cards fall. Equity is calculated using a Monte Carlo system that randomly selects plays through 10,000 poker boards and asserts statistics within ~0.85%. As each community card is selected, up to 10,000 more poker hands are played out, or however many are possible with the cards remaining in the deck. By the last card falling, one player has reaced 100%, and the other 0% chance of winning.
+  Upon entering the page, a user is immediately prompted to enter the cards in their hand, then the cards in their opponents. When each hand is filled, the odds are displayed before any cards fall. Equity is calculated using a Monte Carlo system that randomly plays through 10,000 poker boards and asserts statistics within ~0.85%. As each community card is selected, up to 10,000 more poker hands are played out, or however many are possible with the cards remaining in the deck. By the last card falling, one player has reached 100%, and the other 0% chance of winning.
   
 ![percentages](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.33.36%20AM.png)
 
