@@ -24,7 +24,7 @@ Here we can see the way my proposal should look as a completed project. Each rec
 ## MVPS
   - [x] logic behind any hand vs any other hand calculation 
   - [x] interface in which a user can decide thier hand and their opponents
-  - [ ] cards, when selected, are removed from the possible selection of cards
+  - [x] cards, when selected, are removed from the possible selection of cards
   - [x] percentage updates as soon as a calculation is available
   
 ## Development Timeline
@@ -46,4 +46,4 @@ Here we can see the way my proposal should look as a completed project. Each rec
   
   ### Day Four
   - [x] Live update on wach card click the percentages of win/tie
-  - [ ] Add more flair to the look of the site
+  - [x] Add more flair to the look of the site
