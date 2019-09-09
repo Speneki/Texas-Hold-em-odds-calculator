@@ -119,20 +119,14 @@ Setup.board.append("text")
     
 function heroHandUno(num) {
     heroHand[0] = cards[num].code
-
     d3.select("#hero-1").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", heroOneSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i))  {
             const card = cardsArr[i];
@@ -143,27 +137,19 @@ function heroHandUno(num) {
 
 function heroHandDos(num) {
     heroHand[1] = cards[num].code
-
-
     d3.select("#hero-2").attr("xlink:href", cards[num].image)
-
     selectybois.push(parseInt(num))
-
     handsSelected()
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     d3.select('#instruction')
         .attr('x', 330)
         .attr('y', 200)
         .attr("fill", "white")
         .text("Select two  more cards from the right as the opponents hand")
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", heroTwoSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -175,50 +161,36 @@ function heroHandDos(num) {
 
 function villanHandUno(num) {
     villanHand[0] = cards[num].code
-
     d3.select("#villan-1").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", villanOneSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
             card.addEventListener("click", villanTwoSelect);
         }
-
     }
 }
 
 function villanHandDos(num) {
     villanHand[1] = cards[num].code
-
     d3.select("#villan-2").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     d3.select('#instruction')
         .attr('x', 200)
         .attr('y', 420)
         .text("Select three community cards for the flop")
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", villanTwoSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -230,20 +202,14 @@ function villanHandDos(num) {
 
 function flopFallOne(num) {
     fallenCards[0] = cards[num].code
-
     d3.select("#board-1").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", flopOneSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -255,20 +221,14 @@ function flopFallOne(num) {
 
 function flopFallTwo(num) {
     fallenCards[1] = cards[num].code
-
     d3.select("#board-2").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", flopTwoSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -279,24 +239,18 @@ function flopFallTwo(num) {
 
 function flopFallThree(num) {
     fallenCards[2] = cards[num].code
-
     d3.select("#board-3").attr("xlink:href", cards[num].image)
-
     handsSelected()
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     d3.select("#instruction")
         .attr('x', 300)
         .attr('y', 420)
         .text("Select one community cards for the turn")
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", flopThreeSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -307,26 +261,19 @@ function flopFallThree(num) {
 
 function flopFallFour(num) {
     fallenCards[3] = cards[num].code
-
     d3.select("#board-4").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     d3.select("#instruction")
         .attr('x', 350)
         .attr('y', 420)
         .attr("fill", "white")
         .text("Select one community cards for the river")
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", flopFourSelect)
     }
-
     for (let i = 0; i < cardsArr.length; i++) {
         if (!selectybois.includes(i)) {
             const card = cardsArr[i];
@@ -337,17 +284,11 @@ function flopFallFour(num) {
 
 function flopFallFive(num) {
     fallenCards[4] = cards[num].code
-
     d3.select("#board-5").attr("xlink:href", cards[num].image)
-
     handsSelected()
-
     selectybois.push(parseInt(num))
-
     d3.select(cardsArr[num]).attr("xlink:href", cardBack);
-
     d3.select("#instruction").remove()
-
     Setup.board.append("a")
         .attr("xlink:href", ".")
         .attr('id', 'final-instruction')
@@ -355,7 +296,6 @@ function flopFallFive(num) {
         .attr('x', 340)
         .attr('y', 420)
         .text("Click Here to Reset!"); 
-
     for (let i = 0; i < cardsArr.length; i++) {
         const card = cardsArr[i];
         card.removeEventListener("click", flopFiveSelect)
