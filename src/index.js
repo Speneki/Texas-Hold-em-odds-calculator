@@ -120,13 +120,9 @@ Setup.board.append("text")
     
 function heroHandUno(num) {
     heroHand[0] = cards[num].code
-    let heroOneCardPhoto = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image) 
-        .attr("id", "hero1-photo")
-        .attr("x", 150)
-        .attr("y", 25)
-        .attr("height", 150)
-        .attr("width", 100);
+
+
+    d3.select("#hero-1").attr("xlink:href", cards[num].image)
 
     handsSelected()
 
@@ -149,15 +145,9 @@ function heroHandUno(num) {
 
 function heroHandDos(num) {
     heroHand[1] = cards[num].code
-    d3.select("#hero2-photo").remove()
-    let heroTwoCardPhoto = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "hero2-photo")
-        .attr("x", 260)
-        .attr("y", 25)
-        .attr("height", 150)
-        .attr("width", 100);
-    d3.select("#instruction").remove()
+
+
+    d3.select("#hero-2").attr("xlink:href", cards[num].image)
 
     selectybois.push(parseInt(num))
 
@@ -188,13 +178,8 @@ function heroHandDos(num) {
 
 function villanHandUno(num) {
     villanHand[0] = cards[num].code
-    let villanOneCardPhoto = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "villan1-photo")
-        .attr("x", 550)
-        .attr("y", 25)
-        .attr("height", 150)
-        .attr("width", 100);
+
+    d3.select("#villan-1").attr("xlink:href", cards[num].image)
 
     handsSelected()
 
@@ -218,13 +203,8 @@ function villanHandUno(num) {
 
 function villanHandDos(num) {
     villanHand[1] = cards[num].code
-    let villanTwoCardPhoto = Setup.board.append("svg:image")
-        .attr("xlink:href", cards[num].image)
-        .attr("id", "villan2-photo")
-        .attr("x", 660)
-        .attr("y", 25)
-        .attr("height", 150)
-        .attr("width", 100);
+
+    d3.select("#villan-2").attr("xlink:href", cards[num].image)
 
     d3.select("#instruction").remove()
 
