@@ -1,5 +1,7 @@
 # Texas Hold 'em Odds Calculator
 
+[Live]( https://speneki.github.io/Texas-Hold-em-odds-calculator/)
+
 ## Background and Overview
 
 Prior to studying software development, I spent the majority of my time playing Texas Hold 'em. Both online and live, the hands equity is something that any player needs to be able to calculate on the fly in order to ensure that they are getting their money in good against their opponents perceived range. To be sure that a user is calculating correctly, after the hand is over it is common for players to discuss or list out the possible cards that could fall as they articulate the mental math they went through in the hand. What I intend to show here is simple and streamlined interface for users to quickly access and calculate that math in between hands.
