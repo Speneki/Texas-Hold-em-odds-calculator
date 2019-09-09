@@ -13,7 +13,7 @@ Prior to studying software development, I spent the majority of my time playing 
 Here we can see the way my proposal should look as a completed project. Each rectangle will be a clickable box that gives an option to place any of the remaining remaining card from the deck. It will claculate the odds of one hand against one opponent preflop, on the flop, on the turn and the river in a standard 52 card deck.
 
 
-![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/5HfIcdpnSi.gif)
+![functioningApp](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/readme-display.gif)
 
 ## Functionality: 
   Upon entering the page, a user is immediately prompted to enter the cards in their hand, then the cards in their opponents. When each hand is filled, the odds are immediately displayed before any cards fall. Equity is calculated using a Monte Carlo system that randomly selects plays through 10,000 poker boards and asserts statistics within ~0.85%. As each community card is selected, up to 10,000 more poker hands are played out, or however many are possible with the cards remaining in the deck. By the last card falling, one player has reaced 100%, and the other 0% chance of winning.
