@@ -21,6 +21,17 @@ Here we can see the way my proposal should look as a completed project. Each rec
 ![percentages](https://github.com/Speneki/Texas-Hold-em-odds-calculator/blob/master/src/assets/Screen%20Shot%202019-08-19%20at%209.33.36%20AM.png)
 
   
+## Architecture and Technologies:
+Texas Hold 'Em Odds Calculator is built with:
+
+- ```Vanilla JavaScript``` for data retrieval and computation
+- ```d3.js``` + ```HTML5``` + ```SVG``` + ```CSS3``` for visualization and interactivity
+- ```Webpack``` + ```Babel``` for bundling js files
+- ```Deck Of Cards API``` for card photos and values
+- ```poker-odds API``` for calculating poker odds
+
+Enjoy!
+
 ## MVPS
   - [x] logic behind any hand vs any other hand calculation 
   - [x] interface in which a user can decide thier hand and their opponents
