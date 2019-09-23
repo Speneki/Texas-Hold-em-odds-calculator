@@ -41,7 +41,7 @@ Here we can see the way my proposal should look as a completed project. Each rec
   - [x] fetch and receive json from APIs in console
   
   ### 8/17/19: 
-  - [x] reseatch how to place anything on the screen using DOM manipulation
+  - [x] research how to place anything on the screen using DOM manipulation
   - [x] Get my files to interact properlly 
   
   ### 8/18/19:
